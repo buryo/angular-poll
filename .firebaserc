@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "vote-app-23": {
+      "hosting": {
+        "angular-poll": [
+          "vote-app-23"
+        ]
+      }
+    }
+  }
+}
