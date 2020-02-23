@@ -1,1 +1,7 @@
-<p>home-page works!</p>
+<ul class="offset-1 col-6">
+  <li class="poll-list mt-3" *ngFor="let poll of polls | async">
+    <a routerLink="/poll/{{poll.id}}" routerLinkActive="active">
+      <app-poll-card [poll]="poll"></app-poll-card>
+    </a>
+  </li>
+</ul>
