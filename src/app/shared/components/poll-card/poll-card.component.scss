@@ -1,0 +1,18 @@
+@import '../../styles/colors';
+@import '../../styles/variables';
+
+.details {
+  color: $white;
+}
+
+.most-selected {
+  color: $light-gray;
+}
+
+.poll-body {
+
+  transition: 250ms;
+  &:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+  }
+}
