@@ -1,0 +1,5 @@
+<ul class="offset-1 col-6">
+  <li class="poll-list mt-3" *ngFor="let answer of answers | async">
+    <p>{{ answer.option }}</p>
+  </li>
+</ul>
