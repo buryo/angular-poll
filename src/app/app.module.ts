@@ -1,4 +1,4 @@
-import { CommonModule, DatePipe } from '@angular/common';
+import { PollViewComponent } from './modules/polls/poll-view/poll-view.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -18,6 +18,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
     HomePageComponent,
     Error404PageComponent,
     HeaderComponent,
+    PollViewComponent
   ],
   imports: [
     BrowserModule,
@@ -25,9 +26,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     BrowserAnimationsModule,
-    SharedModule,
-    DatePipe,
-    CommonModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
